@@ -1,0 +1,6 @@
+Flask
+Flask-SocketIO
+python-socketio[gevent]  
+opencv-python
+mediapipe
+numpy

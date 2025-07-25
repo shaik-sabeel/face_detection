@@ -1,0 +1,28 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Focus Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Socket.IO client library (important for real-time communication) -->
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Focus Monitor</h1>
+        <video id="webcamVideo" autoplay muted playsinline></video>
+        <canvas id="processingCanvas" style="display: none;"></canvas>
+        <div id="statusMessage">Awaiting webcam access...</div>
+    </div>
+
+    <div id="alertOverlay" class="alert-overlay">
+        <p>‼️ DISTRACTED! PLEASE REFOCUS ‼️</p>
+    </div>
+
+    <audio id="buzzerSound" src="./assets/buzzer.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
